@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+
+      <div id='app'>
+
+        <div id='headers' class='center'>
+          <!-- Title and subtitles! -->
+          <h2 id='description'>Help! I can't remember the last number of my locker combination, and the bell's about to ring!
+            <br>I only have time to check five numbers before I'm late for class, can you help me out?
+            <br>I know the number is between 1 and 100.  I'll let you know if you're getting close.</h2>    
+            <h1 id='title'>Guess a Number!</h1> 
+            <h2 id='subtitle'>Guess a number between 1 - 100</h1>          
+        </div>
+
+        <div id='main'>
+          <div id='input-parent' class='center'>
+            <!--Lock image-->
+            <img id='lock' src='blueLockClose.png'></img>
+            <!-- Player's guess input, and submit button -->
+            <input id='player-input' class='center' placeholder="#" maxlength='3' autofocus=autofocus></input>
+            <button id='submit' class='btn btn-success'>GO</button>
+          </div>
+
+          <div class='row'>
+            <div id='guesses' class='col-sm-8'>
+              <!-- unordered list of guesses -->
+              <ul id='guess-list' class='center'>
+                  <li class='guess'>-</li>
+                  <li class='guess'>-</li>
+                  <li class='guess'>-</li>
+                  <li class='guess'>-</li>
+                  <li class='guess'>-</li>
+              </ul>
+            </div>
+
+            <div id="menu-btns" class='col-sm-4' class='center' >
+              <!-- reset and hint buttons -->
+              <button id='reset' class='btn btn-large center'>Reset</button>
+              <button id='hint'  class='btn btn-large center'>Need Help?</button>
+            </div>
+          </div> <!--row-->
+        </div> <!--/main-->
+
+      </div> <!--/app-->
+
+
+
+    <div id='footer' class='center'>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <img class='logo' src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4'>
+            <h4>Project by Natasha Desai</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img class='logo' src='grace_hopper_academy.png'></img>
+          </div>
+          
+         <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+         <a href="http://www.freepik.com">Background designed by Kjpargeter / Freepik</a>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/GuessingGame.js"></script>
+
+  </body>
+</html>
